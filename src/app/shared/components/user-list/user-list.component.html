@@ -1,0 +1,11 @@
+<!--<div *ngIf="vm$ | async as vm">{{vm.loading}}</div>-->
+<!--<div *ngIf="vm$ | async as vm">{{vm.error}}</div>-->
+<!--<ul *ngIf="(users$ | async)?.length">-->
+<!--  <li *ngFor="let vm of vm$ | async as vm">{{ vm.users}}</li>-->
+<!--</ul>-->
+<ng-container *ngFor="let vm of (vm$ | async)?.users">
+   <ul>
+     <li>{{vm.name}}</li>
+   </ul>
+
+</ng-container>

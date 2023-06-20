@@ -1,4 +1,4 @@
-export type Users = User[]
+
 
 export interface User {
   id: number
